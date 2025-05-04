@@ -417,14 +417,23 @@ p {
 }
 
 .profile-card .image {
-	background-color: var(--background);
-	border-radius: 8px;
-	overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
 .profile-card .image img {
-	margin-top: 10px;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
 }
+
 
 .profile-card .text {
 	margin-top: 24px;
@@ -689,8 +698,9 @@ p {
 }
 
 .expertise-card {
-	height: 299px;
+    height: auto; /* Let height grow with content */
 }
+
 
 .expertise-card .expertise-item {
 	text-align: center;
